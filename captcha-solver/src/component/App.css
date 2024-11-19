@@ -1,0 +1,126 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Container for input and skip button */
+.input-container {
+  position: relative;
+  width: 500px; /* Matches input width */
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 100%; /* Full width to fit .input-container */
+  background-color: rgb(244, 249, 249);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light black shadow */
+}
+
+/* Style for the skip button inside the input field */
+.skip-button {
+  position: absolute;
+  right: 10px; /* Positions button inside the input on the right */
+  top: 30%; /* Centers vertically */
+  transform: translateY(-50%); /* Ensures center alignment */
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #07284e;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+.skip-button:hover {
+  background-color: #113d6f;
+}
+
+button {
+  width: 100px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #07284e;
+  color: white;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #113d6f;
+}
+
+/* Style for CAPTCHA container */
+.captcha-container {
+  display: inline-block;
+  padding: 40px 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-size: 44px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  letter-spacing: 1px; /* Adds spacing between letters */
+  position: relative; /* Needed for the animation */
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  border: 2px solid; 
+  /* Adds a border to each stat box */
+}
+
+/* Unique border colors for each stat box */
+.stat-skip {
+  border-color: #007bff; /* Blue for skip */
+}
+
+.stat-wrong {
+  border-color: #e74c3c; /* Red for incorrect */
+}
+
+.stat-correct {
+  border-color: #2ecc71; /* Green for correct */
+}
+
+.symbol {
+  margin-right: 5px;
+  font-size: 15px;
+}
+.refer-btn{
+  margin-top: 20px;
+  width: 250px;
+}
+
+
